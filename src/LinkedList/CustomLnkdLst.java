@@ -27,12 +27,10 @@ public class CustomLnkdLst {
 
     public void addLast(String data) {
         Node newNode = new Node(data);
-
         if (head == null) {
             head = newNode;
             return;
         }
-
         Node lastNode = head;
         while (lastNode.next != null) {
             lastNode = lastNode.next;

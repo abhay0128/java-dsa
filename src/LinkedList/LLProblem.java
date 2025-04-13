@@ -72,7 +72,10 @@ public class LLProblem {
         ll.addLast("A", new Node("C"));
         ll.addLast("B", new Node("C"));
         ll.addLast("C", new Node("A"));
+        System.out.println(ll.head.val);
         Node nd = ll.copy(ll.head);
         ll.printList(nd);
+        ll.printList(ll.head);
+        System.out.println(ll.head.val);
     }
 }
