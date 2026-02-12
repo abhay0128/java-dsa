@@ -81,7 +81,7 @@ public class LinkedListImpl {
             this.head = head.next;
             return;
         }
-        int indextosearch = size - n;			// nth node from last in LinkedList will be at size-n index or (size-n+1)th node
+        int indextosearch = size - n;	// nth node from last in LinkedList will be at size-n index or (size-n+1)th node
         int i = 1;
         while (i < indextosearch) {
             prev = prev.next;
@@ -247,8 +247,8 @@ public class LinkedListImpl {
         ll.addFirst("I");
         ll.addLast("unstopbl");
 //		ll.printList(ll);
-//		ll.reverse();
-//		ll.printList(ll);
+		ll.reverse();
+		ll.printList(ll);
 //		System.out.println("size of linked list: " + ll.getSize());
 
         LinkedListImpl ll2 = new LinkedListImpl();

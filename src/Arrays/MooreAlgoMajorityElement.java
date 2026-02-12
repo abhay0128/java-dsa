@@ -8,11 +8,11 @@ The majority element is the element that appears more than ⌊n / 2⌋ times.
 public class MooreAlgoMajorityElement {
 
     public static int majorityElement(int[] nums) {
-        int freq = 1;
-        int result = nums[0];
+        int freq = 0;
+        int result = 0;
 
         for (int n : nums) {
-            if (freq == 1) {
+            if (freq == 0) {
                 result = n;
             }
             if (result == n) {
@@ -26,7 +26,7 @@ public class MooreAlgoMajorityElement {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,1,1,1,1,2,2,2,3,3};
+        int[] nums = {1,1,1,4,5,3,7,8,9,2,1,1,1,1,1,1};
         majorityElement(nums);
     }
 }

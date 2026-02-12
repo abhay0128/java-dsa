@@ -9,11 +9,11 @@ public class ArrayRemoveDup {
         for (int i = 0; i < end; i++) {
             for (int j = i + 1; j < end; j++) {
                 if (arr[i] == arr[j]) {
-	                int shiftLeft = j;
-	                for (int k = j+1; k < end; k++, shiftLeft++) {
-	                    arr[shiftLeft] = arr[k];
-	                }
-                   // arr[j] = arr[end-1];
+//	                int shiftLeft = j;
+//	                for (int k = j+1; k < end; k++, shiftLeft++) {
+//	                    arr[shiftLeft] = arr[k];
+//	                }
+                    arr[j] = arr[end-1];
                     end--;
                     j--;
                 }
@@ -26,6 +26,7 @@ public class ArrayRemoveDup {
         for(int i = 0; i < end; i++){
             System.out.print(whitelist[i]+" ");
         }
+        System.out.println("length:"+ whitelist.length);
     }
 }
 

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
-public class GrapgDFS {
+public class GraphDFS {
 
     // Iterative
     public void dfs(Graph<String> graph, String source) {
