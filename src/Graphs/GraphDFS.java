@@ -1,14 +1,11 @@
 package Graphs;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
 public class GraphDFS {
 
     // Iterative
-    public void dfs(Graph<String> graph, String source) {
+    public static void dfs(Graph<String> graph, String source) {
         Stack<String> stack = new Stack<>();
         stack.push(source);
         Set<String> visited = new HashSet<>();
@@ -29,7 +26,7 @@ public class GraphDFS {
     }
 
     // Recursive
-    public void dfs(Graph<Integer> graph, int source, Set<Integer> visited) {
+    public static void dfs(Graph<Integer> graph, int source, Set<Integer> visited) {
         if(visited.contains(source)) return;
         visited.add(source);
         System.out.println(source);
@@ -38,4 +35,5 @@ public class GraphDFS {
             dfs(graph, neighbour, visited);
         }
     }
+
 }

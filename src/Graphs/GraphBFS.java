@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class GraphBFS {
 
-    public void bfs(Graph<String> graph, String source) {
+    public static void bfs(Graph<String> graph, String source) {
         HashSet<String> visited = new HashSet<>();
         Queue<String> queue = new ArrayDeque<>();
         queue.add(source);

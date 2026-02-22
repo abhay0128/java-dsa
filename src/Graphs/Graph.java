@@ -1,9 +1,6 @@
 package Graphs;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Graph<T> {
     private final HashMap<T, List<T>> adjList;
@@ -46,5 +43,10 @@ public class Graph<T> {
         for(Map.Entry<String, List<String>> val: graph.getAdjList().entrySet()) {
             System.out.println(val.getKey() +"-> "+val.getValue());
         }
+
+       // GraphDFS.dfs(graph, "usa");
+       // GraphBFS.bfs(graph, "usa");
+        PrintAllPaths.printAllPaths(graph, "usa", "greenland", new HashSet<>(), new ArrayList<>());
+        NumConnectedComponents.numberOfConnectedCompoenets(graph);
     }
 }
