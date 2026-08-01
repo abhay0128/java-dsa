@@ -2,17 +2,17 @@ package Trees;
 
 public class Node {
 
-	int data;
+	int val;
 	Node left, right;
 
 	public Node(int item) {
-		this.data = item;
+		this.val = item;
 		this.left = right = null;
 	}
 
 	@Override
 	public String toString() {
-		return "" + data + "" + left + "" + right + "";
+		return "" + val + "" + left + "" + right + "";
 	}
 	
 }

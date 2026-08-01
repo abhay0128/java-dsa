@@ -283,24 +283,24 @@ public class BST {
 		// inorder(root);
 //		preorder(root);
 //		postorder(root);
-		levelOrder(root);
-		if (search(root, 4)) {
-			System.out.println("found");
-		} else
-			System.out.println("not found");
+//		levelOrder(root);
+//		if (search(root, 4)) {
+//			System.out.println("found");
+//		} else
+//			System.out.println("not found");
 		
-		System.out.println("nodes count: "+leafCount(root));
-		System.out.println("sum of nodes: "+sumOfNodes(root));
-		System.out.println("height of a tree: "+height(root));
-		System.out.println("diameter: "+diameter(root));
-		System.out.println("optimized diameter: "+diam(root).diam);
-		System.out.println("sum at k level: "+ sumAtLevelK(root, 1));
+//		System.out.println("nodes count: "+leafCount(root));
+//		System.out.println("sum of nodes: "+sumOfNodes(root));
+//		System.out.println("height of a tree: "+height(root));
+//		System.out.println("diameter: "+diameter(root));
+//		System.out.println("optimized diameter: "+diam(root).diam);
+		System.out.println("sum at k level: "+ sumAtLevelK(root, 3));
 		
 //		delete(root, 8);
 //		levelOrder(root);
 		
 //		printInRange(root, 3,8);
-		rootToLeafPath(root,new ArrayList<>());
+//		rootToLeafPath(root,new ArrayList<>());
 	}
 
 }
